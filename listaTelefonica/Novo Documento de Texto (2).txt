@@ -1,0 +1,25 @@
+ake vai o banco
+CREATE TABLE contato
+(
+  id integer NOT NULL primary key,
+  nome character varying(40) NOT NULL,
+  telefone integer NOT NULL,
+  tipo character varying(40)
+)
+
+INSERT INTO contato values (1,'paulo',555555,'');
+----------------------------------------------------------- 
+
+*nao sei se o do jean tava assim com a table '"contato" mudei isso no codigojava
+*funcionou inclusao, exclusao, pra listar, ordenar, em fim tudo menos o editar
+
+------------------------------------------------------------------
+*assim to fazendo um novo que é com aquele negocio das tela, que acho q melhoraria os botao(teria o salvar e o novo)
+*dai vcs vao ver a tela principal nao consegui fazer o atualiza tela(acho q se fazer vai bombar tudo, se alguem conseguir)
+*a tela secundaria secundaria seria o novo contato
+*a tela terciaria o editar contato
+*o excluir falta o atualizar para poder clicar nos campos
+
+--------------------------------------------------------------------
+eu acho q vale apena tentar focar nesse novo pq fico mais organizado, e se conseguir fazer o atualiza q o joao fez
+vai ficar show
