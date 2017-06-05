@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  * @author BMGJYC
  */
 public class contatoTest {
-    
+    contato instance;
     public contatoTest() {
     }
     
@@ -31,6 +31,7 @@ public class contatoTest {
     
     @Before
     public void setUp() {
+        instance = new contato();
     }
     
     @After
@@ -43,11 +44,10 @@ public class contatoTest {
     @Test
     public void testSetId() {
         System.out.println("setId");
-        Integer id = null;
-        contato instance = new contato();
+        Integer id = 99;
         instance.setId(id);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -56,11 +56,11 @@ public class contatoTest {
     @Test
     public void testSetNome() {
         System.out.println("setNome");
-        String nome = "";
+        String nome = "Teste";
         contato instance = new contato();
         instance.setNome(nome);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -69,11 +69,11 @@ public class contatoTest {
     @Test
     public void testSetTelefone() {
         System.out.println("setTelefone");
-        Integer telefone = null;
+        Integer telefone = 99912345;
         contato instance = new contato();
         instance.setTelefone(telefone);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -82,81 +82,11 @@ public class contatoTest {
     @Test
     public void testSetTipo() {
         System.out.println("setTipo");
-        String tipo = "";
+        String tipo = "fixo";
         contato instance = new contato();
         instance.setTipo(tipo);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
-    /**
-     * Test of getId method, of class contato.
-     */
-    @Test
-    public void testGetId() {
-        System.out.println("getId");
-        contato instance = new contato();
-        Integer expResult = null;
-        Integer result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getNome method, of class contato.
-     */
-    @Test
-    public void testGetNome() {
-        System.out.println("getNome");
-        contato instance = new contato();
-        String expResult = "";
-        String result = instance.getNome();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTelefone method, of class contato.
-     */
-    @Test
-    public void testGetTelefone() {
-        System.out.println("getTelefone");
-        contato instance = new contato();
-        Integer expResult = null;
-        Integer result = instance.getTelefone();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getTipo method, of class contato.
-     */
-    @Test
-    public void testGetTipo() {
-        System.out.println("getTipo");
-        contato instance = new contato();
-        String expResult = "";
-        String result = instance.getTipo();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class contato.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        contato instance = new contato();
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
 }
